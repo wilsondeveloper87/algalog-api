@@ -13,6 +13,7 @@ public class ClienteController {
 
 	@GetMapping("/clientes")
 	public List<Cliente> listar() {
+		
 		var cliente1 = new Cliente();
 		cliente1.setId(1L);
 		cliente1.setNome("João");
