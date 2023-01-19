@@ -20,11 +20,13 @@ import org.springframework.web.bind.annotation.RestController;
 import com.algaworks.algalog.domain.model.Cliente;
 import com.algaworks.algalog.domain.repository.ClienteRepository;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 @RestController
 @RequestMapping("/clientes")
 public class ClienteController {
 
-	@Autowired
 	ClienteRepository repository;
 	
 	@GetMapping("/{id}")
